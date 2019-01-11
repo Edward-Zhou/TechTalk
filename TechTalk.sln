@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{C506CF7B-C46A-4AB3-9A08-7B0EE64AB4ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3DA4CEF3-07E4-4D38-8703-43015F734DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerCoreApp", "src\DockerCoreApp\DockerCoreApp.csproj", "{E7DC3FCC-8FD9-4463-8F90-B9850FCA54F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{DA5B7B65-3037-48D0-A29B-BF3D10516081}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Docker\Docker.md = Docs\Docker\Docker.md
+		Docs\Docker\Docker.pptx = Docs\Docker\Docker.pptx
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7DC3FCC-8FD9-4463-8F90-B9850FCA54F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DC3FCC-8FD9-4463-8F90-B9850FCA54F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DC3FCC-8FD9-4463-8F90-B9850FCA54F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DC3FCC-8FD9-4463-8F90-B9850FCA54F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7DC3FCC-8FD9-4463-8F90-B9850FCA54F0} = {3DA4CEF3-07E4-4D38-8703-43015F734DF5}
+		{DA5B7B65-3037-48D0-A29B-BF3D10516081} = {C506CF7B-C46A-4AB3-9A08-7B0EE64AB4ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0948B2A3-F58A-4D0D-BCF8-52F1A0FDD0CF}
